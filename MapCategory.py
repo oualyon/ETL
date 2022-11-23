@@ -1,3 +1,5 @@
+categories = {}
+
 categories = {
     'Court de tennis' : 'Tennis', 
     'Terrain de basket-ball': 'BasketBall',
@@ -18,10 +20,10 @@ categories = {
     'Salle de tennis de table': 'Tennis de table', 
     "Piste d'athlétisme isolée": 'Athlétisme',
     'Stade d’athlétisme': 'Athlétisme',
-    'Salle de cours collectifs': '',
+    'Salle de cours collectifs': 'Salle de sport',
     "Salle d'escrime": '',
     'Piste de kart': '',
-    'Salle de musculation/cardiotraining': '',
+    'Salle de musculation/cardiotraining': 'Salle de sport',
     'Terrain de pétanque': 'Pétanque',
     "Dojo / Salle d'arts martiaux": 'Arts martiaux',
     'Parcours sportif/santé': '',
@@ -39,8 +41,8 @@ categories = {
     'Pas de tir à la cible': 'Tir',
     'Terrain de volley-ball': 'VolleyBall',
     'Parcours de cross': '', 
-    'Bassin ludique de natation': '',
-    'Bassin mixte de natation': '', 
+    'Bassin ludique de natation': 'Piscine',
+    'Bassin mixte de natation': 'Piscine', 
     'Terrain de soccer': 'FootBall', 
     'Salle de basket': 'BasketBall',
     "Site d'activités aquatiques et nautiques": '',
