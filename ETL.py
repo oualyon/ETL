@@ -37,6 +37,10 @@ dataframe["IsLyon"] = dataframe["Commune"].map(FiltreLyonmap)
 dataframe = dataframe[dataframe["IsLyon"] == True].copy()
 dataframe = dataframe.drop(columns='IsLyon')
 
+## Filtre sur les lieux publics
+# On supprime les entrées contenant "college", "lycee", ...
+dataframe = dataframe.loc[~dataframe['Nom'].str.contains(r'(college|collège|lycée|lycee)', case=False, na=False)]
+
 ## Catégorisation des sports
 category_map = CategoryMap.categories
 dataframe['Category'] = dataframe['Type'].map(category_map)
