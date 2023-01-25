@@ -16,14 +16,14 @@ dataframe = pd.DataFrame(columns=['Nom', 'Commune', 'Type','Coord_X', 'Coord_Y']
 response = rq.get("https://equipements.sports.gouv.fr/api/records/1.0/search/?dataset=data-es&q=&refine.code_dept=69&rows=10000")
 data = response.json()
 for record in data['records']:
-    rc = record['fields']
-    dataframe.loc[len(dataframe.index)] = [rc['nominstallation'],rc['nom_commune'],rc['typequipement'],rc['coordgpsx'],rc['coordgpsy']]
+  rc = record['fields']
+  dataframe.loc[len(dataframe.index)] = [rc['nominstallation'],rc['nom_commune'],rc['typequipement'],rc['coordgpsx'],rc['coordgpsy']]
 
 # Requete à l'API du Grand Lyon
 response = rq.get("https://download.data.grandlyon.com/ws/rdata/urbalyon.recenseqptsport/all.json?maxfeatures=10000&start=1")
 data = response.json()
 for record in data['values']: 
-    dataframe.loc[len(dataframe.index)] = [record['nom'],record['commune'],record['type'],record['lon'],record['lat']]
+  dataframe.loc[len(dataframe.index)] = [record['nom'],record['commune'],record['type'],record['lon'],record['lat']]
 
 # Traitement des données
 ## Suppression des doublons
@@ -76,5 +76,5 @@ for index, row in dataframe.iterrows():
 GeoJson = json.dumps(GeoJson)
 
 ## Création du fichier "GeoActivities.json"
-with open("GeoActivities.json", "w") as outfile:
-    outfile.write(GeoJson)
+with open("GeoActivities.geojson", "w") as outfile:
+  outfile.write(GeoJson)
