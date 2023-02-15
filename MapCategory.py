@@ -50,7 +50,7 @@ categories = {
     'Terrain mixte': 'Autres', 
     'Salle de billard': 'Autres',
     "Bassin d'exercices aquatiques": 'Natation',
-    'Piste de course sur le plat': 'Course à pied',
+    'Piste de course sur le plat': 'Equitation',
     'Aire de lancer': 'Athlétisme', 
     'Salle de lutte': 'Arts martiaux',
     'Salle ou terrain de squash': 'Tennis',
