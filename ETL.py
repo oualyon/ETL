@@ -35,9 +35,8 @@ for record in data['values']:
 
 # Traitement des données
 ## Suppression des doublons
-  # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html
 dataframe.drop_duplicates(inplace=True)
-dataframe.drop_duplicates(subset=['Type','Coord_X','Coord_Y'],inplace=True) # Peut supprimer des entrées en trop dans la Category "Autres"
+dataframe.drop_duplicates(subset=['Type','Coord_X','Coord_Y'],inplace=True)
 dataframe.drop_duplicates(subset=['Nom','Adresse','Code postal','Type'],inplace=True)
 
 ## Filtre sur Lyon
