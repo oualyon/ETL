@@ -51,6 +51,9 @@ dataframe = dataframe.drop(columns='IsLyon')
 # On supprime les entrées contenant "college", "lycee", ...
 dataframe = dataframe.loc[~dataframe['Nom'].str.contains(r'(college|collège|lycée|lycee|ecole)', case=False, na=False)]
 
+## Filtre des valeurs aberantes hors des coordonées de Lyon (4.6 à 5.2 et 45.6 à 45.9)
+dataframe = dataframe.loc[(dataframe['Coord_X'] >= 4.6) & (dataframe['Coord_X'] <= 5.2) & (dataframe['Coord_Y'] >= 45.6) & (dataframe['Coord_Y'] <= 45.9)]
+
 ## Catégorisation des sports
 category_map = CategoryMap.categories
 dataframe['Category'] = dataframe['Type'].map(category_map)
