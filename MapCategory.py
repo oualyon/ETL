@@ -87,7 +87,7 @@ categories = {
     'But/panier isolé de sport collectif': '?',
     'Anneau / piste de cyclisme': 'Cyclisme',
     'Practice': 'Autres',
-    'Terrain de football américain': 'FootBall Américain',
+    'Terrain de football américain': 'Autres',
     'Pas de tir aux plateaux': 'Tir',
     'Site de modélisme automobile': 'Autres',
     "Salle de blocs artificiels d'escalade": 'Escalade', 
