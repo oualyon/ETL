@@ -24,10 +24,10 @@ Le projet est organisé comme suit :
 
 ├── README.md  
 ├── requirements.txt  
-└── Randos  
-|   └── Randos.ipynb  
-└── Velos  
-|   └── VeloV.ipynb  
+├── Randos  
+├──── Randos.ipynb  
+├── Velos  
+├──── VeloV.ipynb  
 ├── ETL_pandas.ipynb  
 ├── MapCategory.py  
 ├── MapFiltreLyon.py  
