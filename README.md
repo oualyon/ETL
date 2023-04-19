@@ -35,8 +35,8 @@ Le projet est organisé comme suit :
 
 ## Contributeurs
 
-- Théo GASCHARD (@TheoGaschard) - Développeur
-- Ousmane CISSE (@ousmanecisse6541244) - Développeur
+- Théo GASCHARD ([@TheoGaschard](https://github.com/TheoGaschard)) - Développeur
+- Ousmane CISSE ([@ousmanecisse6541244](https://github.com/ousmanecisse6541244)) - Développeur
 
 ## Licences
 
