@@ -15,7 +15,7 @@ Ce projet a pour objectif de réaliser un processus d'ETL pour extraire, transfo
 
 ## Utilisation
 
-**ETL_pandas.ipynb** est un fichier de test pour l'ETL
+**ETL_pandas.ipynb** est un fichier de test pour l'ETL  
 **ETL.py** est le fichier à executer sur le serveur pour générer le Data Warehouse
 
 ## Structure du projet
